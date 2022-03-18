@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="caluclator.css">
+    <script defer src="caluclator.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="solar" style="float:left">
+            <h1>CASIO</h1>
+            <input type="text" id="reesult"class="answeer">
+        </div>
+      
+    <table>
+<tr>
+    <td colspan="6"><span id="res" class="answer" style="font-size:x-large;background-color:white;display:block;text-align:right;overflow:hidden;"></span>
+        <input type="textarea" id="result" class="answer" style="text-align:right;"></td>
+</tr>
+<tr>
+</tr>
+<tr>
+   <td> <input type="button" value="BACK" onclick="backward();" class="numb5"></td>
+    <td><input type="button" value="FORWARD" class="numb5"></td>
+</tr>
+        <tr>
+            <td class="td1"><input type="button" value="TAX+"  class="numb"></td>
+            <td class="td1"><input type="button" value="+/-"class="numb5"></td>
+            <td class="td1"><input type="button" value="%"  onclick="percent();" class="numb5"></td>
+            <td class="td1"><input type="button" value="sqrt" onclick="sqart();" class="numb5"></td>
+            <td class="td1"><input type="button" value="MU" class="numb5"></td>
+            <td class="td1"><input type="button" value="CORRECT" class="numb5"></td>
+        </tr>
+        <tr>
+            <td class="td1"><input type="button" value="GST+0" onclick="gst('0')" class="numb"></td>
+            <td class="td1"><input type="button" value="GST+1" onclick="gst('1')" class="numb"></td>
+            <td class="td1"><input type="button" value="GST+2" onclick="gst('2')" class="numb"></td>
+            <td class="td1"><input type="button" value="GST+3" onclick="gst('3')" class="numb"></td>
+            <td class="td1"><input type="button" value="GST+4" onclick="gst('4')" class="numb"></td>
+            <td class="td1"><input type="button" value="GST GT" onclick="gst('4')" class="numb"></td>
+          
+        </tr>
+        <tr>
+            <td><input type="button" value="PLAY" onclick="play('')" class="number"></td>
+            <td><input type="button" value="7" onclick="display('7')" class="number"></td>
+            <td><input type="button" value="8" onclick="display('8')" class="number"></td>
+            <td><input type="button" value="9" onclick="display('9')" class="number"></td>
+            <td><input type="button" value="X" onclick="display('*')" class="operator"></td>
+            <td><input type="button" value="/" onclick="display('/')" class="operator"></td>
+
+        </tr>
+        <tr>
+            <td><input type="button"  value="C"  onclick="clearscreen()"class="clear"></td>
+            <td><input type="button" value="4" onclick="display('4')" class="number"></td>
+            <td><input type="button" value="5" onclick="display('5')" class="number"></td>
+            <td><input type="button" value="6" onclick="display('6')" class="number"></td>
+            <td><input type="button" value="-" onclick="display('-')" class="operator"></td>
+            <td><input type="button" value="MRC" class="operator"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="AC/ON" onclick="allclear()" class="clear"></td>
+            <td><input type="button" value="1" onclick="display('1')" class="number"></td>
+            <td><input type="button" value="2" onclick="display('2')" class="number"></td>
+            <td><input type="button" value="3" onclick="display('3')" class="number"></td>
+            <td rowspan="2"><input type="button" value="+" onclick="display('+')" class="operator1"></td>
+            <td><input type="button" value="M-" class="operator"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="display('0')" class="number"></td>
+            <td><input type="button" value="00" onclick="display('00')" class="number"></td>
+            <td><input type="button" value="." onclick="display('.')" class="number"></td>
+            <td><input type="button" value="=" onclick="resolve();" class="operator"></td>
+            <td><input type="button" value="M+" class="operator"></td>
+        </tr>
+    </table>
+    <div id="history_log" style="color:red;font-size: x-larger;float:left"></div>
+</div>
+
+</body>
+</html>

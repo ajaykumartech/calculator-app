@@ -1,0 +1,172 @@
+*{
+    justify-content: center;
+}
+@media only screen and(max-width:760px){
+    .reponsive,td,tr,table{
+        max-width:100%;
+        margin :6px 0;
+    }
+}
+@media only screen and(max-width:500px){
+    .reponsive{
+        width:100%;
+        
+    }
+    clearfix::after{
+        content:"";
+        display: table;
+        clear: both;
+    }
+}
+@media only screen and(max-width:250px)
+{
+    .responsive{
+        width:100%;
+    }
+
+}
+.container{
+    max-width:100%;
+    
+}
+h1{
+    text-align: left;
+    padding-left: 20px;
+    color:aliceblue
+}
+body{
+    color: rgb(148, 61, 224);       
+    background-color: rgb(253, 250, 250);
+}
+.td{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 8px groove rgb(14, 13, 13) ;
+    width:20px;
+    height: 20px;
+    background-color: rgb(20, 20, 20); 
+    border-radius: 10px;
+}
+.td1{
+    background-color: rgb(119, 117, 117); 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+
+tr{
+    background-color: rgb(12, 11, 11); 
+}
+
+
+input[type="button"]:hover {
+
+    background-color: rgb(243, 35, 53);
+  
+}
+input[type="button"]:active {
+  
+    background-color: rgb(6, 7, 7);
+  
+}
+table{
+    border: 3px groove rgb(109, 107, 107);
+    border-spacing: 15px 15px;
+    border-collapse: separate;
+    background-color: rgb(119, 117, 117);
+    text-align: center;
+    width: 100%;
+    padding-bottom: 25px;
+    border-radius: 10px;
+}
+.answer{
+    height: 50px;
+    width: 100%;
+    border: 1px thin rgb(219, 216, 216);
+    padding:0 25px 0 25px;
+}
+
+.result{
+    width: auto;
+    border: 2px groove black;
+    padding:0 50px 0 50px;
+}
+.container{
+   max-width: 50%;
+  background-color: rgb(8, 8, 8);
+  margin: 100px auto;
+  border-radius: 10px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left:20px;
+  box-shadow: 30px 15px 20px rgb(78, 78, 78);
+}
+.operator {
+    background-color: rgb(8, 8, 7);
+    padding: 5px;
+    color: white;
+    border: solid black 2px;
+    width: 100%;
+    height: 75px;
+    cursor: pointer;
+    font-size: xx-large;
+  }
+
+  .operator1 {
+    background-color: rgb(8, 8, 7);
+    padding: 15px;
+    color: white;
+    border: solid black 2px;
+    width: 100%;
+    height: 180px;
+    cursor: pointer;
+    font-size: xx-large;
+  }
+  .clear {
+    background-color: rgb(50, 241, 57);
+    color: black;
+    border: solid black 1px;
+    width: 100%;
+    height: 75px;
+    cursor: pointer;
+    margin: auto;
+    font-size: larger;
+  }
+  .answer{
+    padding: 2px;
+    height: 75px;
+    color: rgba(7, 1, 1, 0.938);
+    border: solid rgb(241, 241, 240) 2px;
+    width: 100%;
+    font-size: xx-large;
+  }
+  .number {
+    padding: 15px;
+    height: 75px;
+    color: white;
+    border: 1px solid rgb(10, 10, 10) ;
+    width: 100%;
+    cursor: pointer;
+    font-size: x-large;
+    background-color: rgb(8, 8, 8);
+  }
+  .numb{
+     width: 100%; 
+     cursor:pointer;
+     padding: 8px;
+     font-size: large;
+     font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .numb5{
+    width: 100%; 
+    cursor:pointer;
+    padding: 8px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+ }
+ 
+  
